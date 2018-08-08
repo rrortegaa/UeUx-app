@@ -1,0 +1,116 @@
+
+.flexcard {
+    display: flex; /* el contenido es flexible y cuando no quepa en horizontal se pasa hacia abajo */
+    justify-content: center;    
+}
+
+.card {
+    height: 80px;
+    width: 50%;
+    display: grid; /* este div será de filas y columnas */
+    grid-template-columns: 1fr 1fr 1fr; /* Divide en tres fracciones iguales las columnas */
+    grid-template-rows: 1fr 1fr 1fr; /* Divide en tres fracciones iguales las lineas */
+    margin:20px 0; /* 1:arriba y abajo, 2: izquierda y derecha */
+    background-color: white; /* color de la tarjeta */
+    box-shadow: 1px 1px 1px 1px #888888; 
+    padding: 20px;
+}
+
+.flexcard .card {
+    display: flex;
+    align-items: center;
+
+}
+.flexcard .text {
+    display: flex;
+    align-content: center;
+    font-size: 11px;
+}
+    
+.cont_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 48px;
+    background-color: #1976d2; 
+    color:white;
+    font-size: 11px;
+    box-sizing: border-box;
+    cursor:pointer;
+    }
+
+    .img_card {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        margin:auto;
+        padding: 11px;
+        text-decoration: none;
+        color:white;
+    }
+
+    h3 {    
+        font-family: Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 1rem;
+        color: #1976d2;
+    }
+
+    .card1y3 {
+        background-color: #fafafa;
+        color: rgba(0,0,0,.87);
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 200px;
+        margin: auto;
+        font-size: 11px;
+        line-height: 1.5rem;
+    }
+
+    .derecha {
+        padding-left: 30px;
+    } 
+
+    .card2y4 {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 200px;
+        margin: auto;
+        font-size: 11px;
+        line-height: 1.5rem;
+    }
+    .flexcard2 {
+        display: flex;
+        justify-content: center;    
+    }
+    
+    .card2 {
+        height: 120px;
+        width: 20%;
+        margin:20px 0;
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px #888888;
+        padding: 20px;
+    }
+    
+    .flexcard2 .card2 {
+        display: flex;
+        align-items: center;
+    
+    }
+    .flexcard2 .text {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 20px;
+        font-size: 11px;
+        line-height: 1.5rem;
+    }
